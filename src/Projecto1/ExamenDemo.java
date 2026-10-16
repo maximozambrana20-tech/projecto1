@@ -40,7 +40,7 @@ public class ExamenDemo {
         
         int opcion = 0;
         
-        while (opcion != 5) {
+        while (opcion != 6) {
             System.out.println("\n===== SISTEMA DE EXAMENES =====");
             System.out.println("1. Realizar examen");
             System.out.println("2. Ver preguntas");
@@ -51,6 +51,7 @@ public class ExamenDemo {
             System.out.print("Seleccione una opcion: ");
             
             String entrada = teclado.nextLine();
+            
             
             try {
                 opcion = Integer.parseInt(entrada);
@@ -197,12 +198,13 @@ public class ExamenDemo {
                     break;
                 case 5:
                     registro.mostrarNotas();
-                    break;
                     
                     
                 case 6:
+                    
                     System.out.println("Gracias por utilizar el sistema.");
                     break;
+                    
                 
                 default:
                     System.out.println("Opcion no valida.");
